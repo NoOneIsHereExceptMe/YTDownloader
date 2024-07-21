@@ -140,7 +140,7 @@ if user_input:
             
             details = f"### Playlist Title: ```{pl.title}```\n\n### Number of Videos: ```{len(pl.videos)}```\n\n### Total Playtime: ```{timedelta(seconds=sum(i.length for i in pl.videos))}```\n\n"
             details += "### Playlist Description: \n```{pl.description}\n```\n\n### Videos Found: \n```"
-            #print("error")
+            print("error")
             
             for i in pl.videos:
                 
