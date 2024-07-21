@@ -138,9 +138,9 @@ if user_input:
         try:
             pl = Playlist(user_input)
             
+            print("error")
             details = f"### Playlist Title: ```{pl.title}```\n\n### Number of Videos: ```{len(pl.videos)}```\n\n### Total Playtime: ```{timedelta(seconds=sum(i.length for i in pl.videos))}```\n\n"
             details += "### Playlist Description: \n```{pl.description}\n```\n\n### Videos Found: \n```"
-            print("error")
             
             for i in pl.videos:
                 
